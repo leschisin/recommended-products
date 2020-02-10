@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400,600,700">
+		
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+		<!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+		<link rel="stylesheet" href="owl.theme.default.min.css">
+
+    <title>Recommendation Widget</title>
+		<style>
+		
+			/* FOR STAGING PURPOSES */
+			.container-fluid {
+				max-width: 1600px;
+			}
+			
+			/* RECOMMEND WIDGET STYLES */
+			#recommended-products {
+				padding: 15px;
+			}
+			#recommended-products h2 {
+				font-family: 'Source Sans Pro', sans-serif;
+				color: #333;
+				font-size: 20px;
+				font-weight: 300;
+				padding: 15px 0;
+			}
+			.aem-recommend-widget {
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+			.aem-recommend-widget .aem-recommend-item {
+				padding-bottom: 5px;
+				border-bottom: 1px solid #cacaca;
+			}
+			.aem-recommend-widget .stars {
+				color: #666;
+				margin: 5px 0;
+				font-size: 12px;
+			}
+			.aem-recommend-widget .stars .fa-star {
+				color: #ccc;
+			}
+			.aem-recommend-widget .stars .fa-star.red {
+				color: #c70a4c;
+			}
+			.aem-recommend-widget .item-alert {
+				color: #c70a4c;
+				height: 15px;
+				line-height: 15px;
+				font-size: 12px;
+				font-weight: 600;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.aem-recommend-widget .item-desc {
+				display: block;
+				text-decoration: none;
+				position: relative;
+				color: #333;
+				font-size: 14px;
+				margin: 5px 0;
+				line-height: 18px;
+				height: 36px;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;  
+				overflow: hidden;
+			}
+			.aem-recommend-widget .item-message {
+				line-height: 15px;
+				height: 15px;
+				margin-bottom: 5px;
+			}
+			.aem-recommend-widget .item-message .type {
+				display: block;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.aem-recommend-widget .item-message .type.orange {
+				color: #E62605;
+			}
+			.aem-recommend-widget .item-message .date {
+				display: block;
+				color: #666;
+				font-size: 12px;
+			}
+			.aem-recommend-widget .item-price {
+				font-family: "Open Sans Condensed", sans-serif;
+				color: #333;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			@media(min-width: 600px) {
+				#recommended-products h2 {
+					font-size: 30px;
+					font-weight: 300;
+					padding: 30px 0;
+				}
+				.aem-recommend-widget .aem-recommend-item {
+					padding-bottom: 15px;
+				}
+				.aem-recommend-widget .stars {
+					margin: 15px 0 5px 0;
+					font-size: 14px;
+				}
+				.aem-recommend-widget .item-alert {
+					height: 20px;
+					line-height: 20px;
+					font-size: 16px;
+					font-weight: 600;
+				}
+				.aem-recommend-widget .item-desc {
+					font-size: 16px;
+					line-height: 20px;
+					height: 40px;
+				}
+				.aem-recommend-widget .item-message .date {
+					font-size: 14px;
+				}
+			}
+			@media(min-width: 992px) {
+				.aem-recommend-widget .item-desc {
+					font-size: 18px;
+					line-height: 23px;
+					height: 46px;
+				}
+			}
+			
+			.owl-theme .owl-dots .owl-dot.active span,
+			.owl-theme .owl-dots .owl-dot:hover span {
+				background: #c70a4c;
+			}
+			
+		</style>
+  </head>
+  <body>
+	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+				
+					<div id="recommended-products">
+					
+						<h2>Recommended products</h2>
+					
+						<div class="owl-carousel owl-theme aem-recommend-widget">
+							<div class="aem-recommend-item">
+								<a href="#"><img class="img-responsive" src="https://via.placeholder.com/300" /></a>
+								<div class="stars">
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star"></i>
+									(16)
+								</div>
+								<div class="item-alert">New</div>
+								<a href="#" class="item-desc">Hugs & Healing Set for WellieWishers Dolls</a>
+								<div class="item-message">
+									<span class="type orange">Backordered</span>
+								</div>
+								<div class="item-price">$32.00</div>
+							</div>
+							<div class="aem-recommend-item">
+								<a href="#"><img class="img-responsive" src="https://via.placeholder.com/300" /></a>
+								<div class="stars">
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star"></i>
+									(16)
+								</div>
+								<div class="item-alert">50% off through 5/31</div>
+								<a href="#" class="item-desc">Cookie Baking Set for WellieWishers Dolls</a>
+								<div class="item-message"></div>
+								<div class="item-price">$32.00</div>
+							</div>
+							<div class="aem-recommend-item">
+								<a href="#"><img class="img-responsive" src="https://via.placeholder.com/300" /></a>
+								<div class="stars">
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star"></i>
+									(16)
+								</div>
+								<div class="item-alert"></div>
+								<a href="#" class="item-desc">This is a really long title that is much to large to display all in one place</a>
+								<div class="item-message">
+									<span class="type orange">Backordered</span>
+								</div>
+								<div class="item-price">$32.00</div>
+							</div>
+							<div class="aem-recommend-item">
+								<a href="#"><img class="img-responsive" src="https://via.placeholder.com/300" /></a>
+								<div class="stars">
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star"></i>
+									(16)
+								</div>
+								<div class="item-alert">New</div>
+								<a href="#" class="item-desc">Chocolate topping chocolate cake tart apple pie pudding</a>
+								<div class="item-message"></div>
+								<div class="item-price">$32.00</div>
+							</div>
+							<div class="aem-recommend-item">
+								<a href="#"><img class="img-responsive" src="https://via.placeholder.com/300" /></a>
+								<div class="stars">
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star red"></i>
+									<i class="fas fa-star"></i>
+									(16)
+								</div>
+								<div class="item-alert"></div>
+								<a href="#" class="item-desc">Chocolate topping chocolate cake tart apple pie pudding</a>
+								<div class="item-message">
+									<span class="type orange">Backordered</span>
+								</div>
+								<div class="item-price">$32.00</div>
+							</div>
+							
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<script src="jquery.min.js"></script>
+		<script src="owl.carousel.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		
+			$('.aem-recommend-widget').owlCarousel({
+				loop:true,
+				nav:false,
+				responsive:{
+					0:{
+						items: 2,
+						margin: 20
+					},
+					600:{
+						items: 3,
+						margin: 30
+					},
+					992:{
+						items: 4,
+						margin: 50
+					},
+					1200:{
+						items: 5,
+						margin: 60
+					}
+				}
+			});
+			
+		</script>
+  </body>
+</html>
